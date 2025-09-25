@@ -11,14 +11,14 @@
   <title>Actividades para Empresas en Colombia | Team Building y Dinámicas Empresariales</title>
   <meta name="description" content="Descubre actividades de integración empresarial y dinámicas para empresas en Colombia. Team building, experiencias corporativas y talleres para motivar equipos.">
 
-  <!-- Keywords principales (opcional, Google ya no lo prioriza pero sí otros buscadores) -->
+  <!-- Keywords principales (opcional) -->
   <meta name="keywords" content="actividades para empresas, team building Colombia, dinámicas empresariales, integración empresarial, experiencias corporativas, Bogotá, Medellín">
 
   <!-- Autor -->
   <meta name="author" content="Actividades para Empresas">
 
   <!-- =============================
-       🔹 Open Graph (para compartir en redes)
+       🔹 Open Graph
   ============================== -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://actividadesparaempresas.com/">
@@ -45,74 +45,42 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- =============================
-       🔹 Estilos internos (CSS)
-       ⚠️ Sugerencia: luego mover a styles.css
+       🔹 Estilos externos
   ============================== -->
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      line-height: 1.5;
-      color: #333;
-    }
-    /* ===== Header y Navegación ===== */
-    header {
-      background: #0d47a1;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav a {
-      color: #fff;
-      margin-left: 1rem;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    /* ===== Hero ===== */
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem;
-      background: linear-gradient(to right, #1976d2, #42a5f5);
-      color: #fff;
-    }
-    .hero h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .btn {
-      background: #ffca28;
-      color: #000;
-      padding: 0.8rem 1.2rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    /* ===== Secciones ===== */
-    .section {
-      padding: 3rem 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .grid {
-      display: grid;
-      gap: 1.5rem;
-    }
-    @media(min-width: 768px) {
-      .grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-    /* ===== Footer ===== */
-    footer {
-      background: #0d47a1;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- =============================
+       🔹 Datos estructurados JSON-LD
+  ============================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Actividades para Empresas",
+    "image": "https://actividadesparaempresas.com/img/logo.png",
+    "@id": "https://actividadesparaempresas.com",
+    "url": "https://actividadesparaempresas.com",
+    "telephone": "+57 3000000000",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bogotá",
+      "addressRegion": "Cundinamarca",
+      "addressCountry": "CO"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Bogotá" },
+      { "@type": "City", "name": "Medellín" },
+      { "@type": "Country", "name": "Colombia" }
+    ],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }]
+  }
+  </script>
 </head>
 <body>
   <!-- =============================
@@ -129,7 +97,7 @@
   </header>
 
   <!-- =============================
-       🔹 Hero (presentación inicial)
+       🔹 Hero
   ============================== -->
   <section class="hero">
     <h1>Actividades de Team Building y Dinámicas Empresariales en Colombia</h1>
@@ -159,7 +127,7 @@
   </section>
 
   <!-- =============================
-       🔹 Blog (últimos artículos)
+       🔹 Blog
   ============================== -->
   <section class="section">
     <h2>Últimos artículos del Blog</h2>
@@ -174,7 +142,9 @@
        🔹 Footer
   ============================== -->
   <footer>
-    <p>© 2025 Actividades para Empresas en Colombia | <a href="/contacto/" style="color:#ffca28;">Contáctanos</a></p>
+    <p>© 2025 Actividades para Empresas en Colombia | 
+      <a href="/contacto/" class="contact-link">Contáctanos</a>
+    </p>
   </footer>
 </body>
 </html>
