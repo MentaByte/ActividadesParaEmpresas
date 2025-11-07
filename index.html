@@ -1,150 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- =============================
-       🔹 Configuración básica
-  ============================== -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO Title & Description -->
-  <title>Actividades para Empresas en Colombia | Team Building y Dinámicas Empresariales</title>
-  <meta name="description" content="Descubre actividades de integración empresarial y dinámicas para empresas en Colombia. Team building, experiencias corporativas y talleres para motivar equipos.">
-
-  <!-- Keywords principales (opcional) -->
-  <meta name="keywords" content="actividades para empresas, team building Colombia, dinámicas empresariales, integración empresarial, experiencias corporativas, Bogotá, Medellín">
-
-  <!-- Autor -->
-  <meta name="author" content="Actividades para Empresas">
-
-  <!-- =============================
-       🔹 Open Graph
-  ============================== -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://actividadesparaempresas.com/">
-  <meta property="og:title" content="Actividades para Empresas en Colombia | Team Building y Dinámicas Empresariales">
-  <meta property="og:description" content="Motiva a tu equipo con experiencias corporativas únicas en Bogotá, Medellín y toda Colombia.">
-  <meta property="og:image" content="https://actividadesparaempresas.com/img/preview.jpg">
-
-  <!-- =============================
-       🔹 Twitter Cards
-  ============================== -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Actividades para Empresas en Colombia">
-  <meta name="twitter:description" content="Team building, dinámicas y experiencias corporativas en Colombia.">
-  <meta name="twitter:image" content="https://actividadesparaempresas.com/img/preview.jpg">
-
-  <!-- =============================
-       🔹 Favicon
-  ============================== -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-  <!-- =============================
-       🔹 Tipografía
-  ============================== -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <!-- =============================
-       🔹 Estilos externos
-  ============================== -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- =============================
-       🔹 Datos estructurados JSON-LD
-  ============================== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Actividades para Empresas",
-    "image": "https://actividadesparaempresas.com/img/logo.png",
-    "@id": "https://actividadesparaempresas.com",
-    "url": "https://actividadesparaempresas.com",
-    "telephone": "+57 3000000000",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Bogotá",
-      "addressRegion": "Cundinamarca",
-      "addressCountry": "CO"
-    },
-    "areaServed": [
-      { "@type": "City", "name": "Bogotá" },
-      { "@type": "City", "name": "Medellín" },
-      { "@type": "Country", "name": "Colombia" }
-    ],
-    "openingHoursSpecification": [{
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "09:00",
-      "closes": "18:00"
-    }]
-  }
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Actividades para empresas - experiencias y soluciones que fortalecen equipos, potencian la comunicación y generan impacto positivo." />
+  <title>Actividades para Empresas | Experiencias que inspiran</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- =============================
-       🔹 Header con navegación
-  ============================== -->
   <header>
-    <div class="logo"><strong>Actividades para Empresas</strong></div>
-    <nav>
-      <a href="/">Inicio</a>
-      <a href="/actividades-de-integracion-empresarial/">Servicios</a>
-      <a href="/blog/">Blog</a>
-      <a href="/contacto/">Contacto</a>
+    <nav class="navbar">
+      <div class="logo">Actividades <span>para Empresas</span></div>
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#experiencias">Experiencias</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Team Building</a></li>
+            <li><a href="#">Magia Corporativa</a></li>
+            <li><a href="#">Eventos Empresariales</a></li>
+          </ul>
+        </li>
+        <li><a href="#soluciones">Soluciones</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- =============================
-       🔹 Hero
-  ============================== -->
-  <section class="hero">
-    <h1>Actividades de Team Building y Dinámicas Empresariales en Colombia</h1>
-    <p>Motiva a tu equipo con experiencias corporativas únicas en Bogotá, Medellín y toda Colombia.</p>
-    <a href="/contacto/" class="btn">Solicita tu cotización</a>
-  </section>
-
-  <!-- =============================
-       🔹 Servicios principales
-  ============================== -->
-  <section class="section">
-    <h2>Servicios principales</h2>
-    <div class="grid">
-      <div>
-        <h3>Team Building Empresas Bogotá</h3>
-        <p>Actividades diseñadas para fortalecer equipos en la capital.</p>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <h1>Transforma tu equipo con experiencias memorables</h1>
+        <p>Diseñamos actividades que conectan, inspiran y generan resultados tangibles en tu organización.</p>
+        <a href="#contacto" class="btn-primary">Conversemos</a>
       </div>
-      <div>
-        <h3>Actividades para Empresas Medellín</h3>
-        <p>Dinámicas de integración empresarial en la ciudad de la eterna primavera.</p>
-      </div>
-      <div>
-        <h3>Experiencias Corporativas</h3>
-        <p>Talleres y dinámicas para motivar y alinear a tu equipo en toda Colombia.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- =============================
-       🔹 Blog
-  ============================== -->
-  <section class="section">
-    <h2>Últimos artículos del Blog</h2>
-    <ul>
-      <li><a href="/como-hacer-team-building-bajo-presupuesto-colombia/">Cómo hacer Team Building con bajo presupuesto en Colombia</a></li>
-      <li><a href="/ideas-actividades-empresas-pequenas-colombia/">Ideas de actividades para empresas pequeñas en Colombia</a></li>
-      <li><a href="/dinamicas-para-mejorar-clima-laboral-colombia/">Actividades para mejorar el clima laboral en Colombia</a></li>
-    </ul>
-  </section>
+    <section class="section light" id="experiencias">
+      <h2>Experiencias destacadas</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Team Building Creativo</h3>
+          <p>Actividades diseñadas para fortalecer la colaboración y comunicación entre equipos.</p>
+        </div>
+        <div class="card">
+          <h3>Show de Magia Corporativa</h3>
+          <p>Un espectáculo participativo que refuerza valores y mensajes clave de tu organización.</p>
+        </div>
+        <div class="card">
+          <h3>Eventos con Propósito</h3>
+          <p>Conecta el entretenimiento con el desarrollo organizacional y la motivación del talento humano.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <!-- =============================
-       🔹 Footer
-  ============================== -->
   <footer>
-    <p>© 2025 Actividades para Empresas en Colombia | 
-      <a href="/contacto/" class="contact-link">Contáctanos</a>
-    </p>
+    <p>© 2025 Actividades para Empresas | Desarrollado por Nabil Touchie</p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
