@@ -49,6 +49,16 @@ header {
     letter-spacing: 1px;
 }
 
+.enlace-discreto {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.enlace-discreto:hover {
+    opacity: 0.8;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--primary) 0%, #3d3ef0 100%);
