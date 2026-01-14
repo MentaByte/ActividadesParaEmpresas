@@ -145,6 +145,7 @@ section {
     line-height: 1.8;
     color: var(--text);
     max-width: 900px;
+    margin-bottom: 1rem;
 }
 
 /* Grid Layouts */
