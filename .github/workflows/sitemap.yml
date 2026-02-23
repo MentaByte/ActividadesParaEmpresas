@@ -1,0 +1,28 @@
+name: Generar Sitemap Automatico
+
+on:
+  push:
+    branches:
+      - main  # Revisa si tu rama se llama 'main' o 'master'
+
+jobs:
+  sitemap_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 
+
+      - name: generate-sitemap
+        uses: cicirello/generate-sitemap@v1.10.4
+        with:
+          base-url-path: https://www.actividadesparaempresas.com/
+
+      - name: Guardar y subir el sitemap al repo
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add sitemap.xml
+          git commit -m "Actualización automática del sitemap" || echo "No hay cambios para subir"
+          git push
